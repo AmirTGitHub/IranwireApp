@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, Text,  View, FlatList} from "react-native";
+import { StyleSheet, Text,  View, FlatList, TouchableOpacity} from "react-native";
 import { Card, ListItem, Button, List , Divider , SocialIcon} from "react-native-elements";
 
 
@@ -25,7 +25,9 @@ export default class Headlines extends Component {
       onLongPress= () =>{
           
         }
-      
+      handePress=()=>{
+        console.log("you pres this")
+      }
 
       render(){
           return(
@@ -35,9 +37,11 @@ export default class Headlines extends Component {
               data={this.state.data}
               keyExtractor={(x, i) => i}
               renderItem={({ item }) => (
+                <TouchableOpacity>
                 <Card
                   title={item.category}
                   image={(source = { uri: "https://iranwire.com" + item.image })}
+                  onPress={this.handePress()}
                 >
                   <Text style={styles.title}>{item.title}</Text>
                   <View style={styles.social}>
@@ -47,6 +51,7 @@ export default class Headlines extends Component {
                   </View>
 
                 </Card>
+                </TouchableOpacity>
               )}
             />
           </List>

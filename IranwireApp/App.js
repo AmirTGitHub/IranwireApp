@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import {StyleSheet , View } from 'react-native'
 import HomePage from './src/Compotents/HomePage'
 import AppHeader from './src/Compotents/AppHeader'
+import Loadfeatures from './src/Compotents/LoadFeatures'
+import LoadFeatures from './src/Compotents/LoadFeatures';
 
 
 export default class App extends Component {
@@ -11,7 +13,8 @@ export default class App extends Component {
     return (
       <View >
       <AppHeader />
-      <HomePage />
+      <LoadFeatures />
+      {/* <HomePage /> */}
       </View>
     );
   }
