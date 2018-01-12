@@ -27,7 +27,7 @@ export default class Features extends Component {
           return(
         <View>
           <List>
-            <SectionList
+            <FlatList
               data={this.state.data}
               keyExtractor={(x, i) => i}
               renderItem={({ item }) => (

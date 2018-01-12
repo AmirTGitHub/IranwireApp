@@ -33,18 +33,9 @@ export default class HomePage extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
       <View>
-        <Headlines style={styles.headlines}/>
+        <Headlines/>
         </View>
-        <View>
-        <Blogs style={styles.blogs}/>
-        </View>
-        {/* <Divider style={{ backgroundColor: 'blue' }}>
-          <Text>بلاگها </Text>
-        </Divider>
-        <Features style={styles.fetures}/> */}
-      </View>
     );
   }
 }

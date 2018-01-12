@@ -13,8 +13,8 @@ export default class App extends Component {
     return (
       <View >
       <AppHeader />
-      <LoadFeatures />
-      {/* <HomePage /> */}
+      {/* <LoadFeatures /> */}
+      <HomePage style={{flex:1}} />
       </View>
     );
   }
